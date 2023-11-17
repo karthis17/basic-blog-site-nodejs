@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+
+<main>
+    <div class="container">
+        <h1 class="title text-body-secondary mt-4"><%= title %></h1>
+        <p class="text-center"><%= sub %></p>
+        <div class="fs-5 m-5">
+            <%= body %>
+        </div>
+        <div class="text-end m-5">
+            <a class="btn btn-dark mx-3" href="/update-post/<%= index %>">Update</a>
+            <a class="btn btn-dark" href="/delete-post/<%= index %>">Delete</a>
+        </div>
+    </div>
+</main>
+
+<%- include("partials/footer.ejs") %>

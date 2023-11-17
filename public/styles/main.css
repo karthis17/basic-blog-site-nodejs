@@ -1,0 +1,14 @@
+.post-link{
+    color: #555;
+}
+
+.post-link:hover{
+    transition: 0.4ms;
+    color: #3c8ae8;
+}
+
+.title{
+    font-size: 32pt;
+    font-weight: 900;
+    text-align: center;
+}

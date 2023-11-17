@@ -1,0 +1,33 @@
+<%- include("partials/header.ejs") %>
+
+<main>
+    <div class="container my-5">
+        <div class="row">
+        <h2 class="text-center my-4"> Write Your Blog Here. </h2>
+        <div class="row"><div class="col-12 m-3"></div></div>
+        <div class="col-md-10 col-lg-10 mx-auto">
+            <form action="/sumbit-new-post" method="post">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" name="title" placeholder="name" required>
+                    <label for="floatingInput">Title</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" name="subtitle" placeholder="Password" required>
+                    <label for="floatingPassword">Subtitle</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" style="height: 120px" name="body" id="floatingTextarea" required></textarea>
+                    <label for="floatingTextarea">Body</label>
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <input type="submit" value="Add" class="btn btn-dark btn-outline-ligth my-4 px-4">
+                  </div>
+            </form>
+        </div>
+        </div>
+    </div>
+    <div class="row"><div class="col-12 m-5"></div></div>
+    <div class="row"><div class="col-12 m-2"></div></div>
+</main>
+
+<%- include("partials/footer.ejs") %>
