@@ -6,13 +6,13 @@
     <h2 class="text-center my-4"> Write Your Blog Here. </h2>
     <div class="row"><div class="col-12 m-3"></div></div>
     <div class="col-md-10 col-lg-10 mx-auto">
-        <form action="/sumbit-updated-post/<%= index %>" method="post">
+        <form action="/sumbit-updated-post/<%= _id %>" method="post">
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="floatingInput" value="<%= title %>" name="title" placeholder="name" required>
                 <label for="floatingInput">Title</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingPassword" value="<%= sub %>" name="subtitle" placeholder="Password" required>
+                <input type="text" class="form-control" id="floatingPassword" value="<%= subtitle %>" name="subtitle" placeholder="Password" required>
                 <label for="floatingPassword">Subtitle</label>
               </div>
               <div class="form-floating">
